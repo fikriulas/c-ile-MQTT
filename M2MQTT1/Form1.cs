@@ -30,12 +30,8 @@ namespace M2MQTT1
             clientid = Guid.NewGuid().ToString();
             client.Connect(clientid);
             calistir();
-            this.Close();
-
-            // timer code
-            //System.Timers.Timer x = new System.Timers.Timer(9000);
-            //x.Elapsed += new System.Timers.ElapsedEventHandler(saniyelik);
-            //x.Start();
+            this.Close();            
+            
         }
 
         
@@ -65,12 +61,7 @@ namespace M2MQTT1
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        }     
        
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
