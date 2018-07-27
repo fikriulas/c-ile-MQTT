@@ -30,7 +30,7 @@ namespace M2MQTT1
             clientid = Guid.NewGuid().ToString();
             client.Connect(clientid);
             calistir();
-            this.Close();            
+              
             
         }
 
